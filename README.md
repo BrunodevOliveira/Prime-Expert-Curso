@@ -1,2 +1,2 @@
 # Prime-Expert-Curso
-Curso de Robot
+Curso de Robot par iniciantes.
