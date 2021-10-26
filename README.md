@@ -1,2 +1,2 @@
 # Prime-Expert-Curso
-Curso de Robot par iniciantes.
+Repositório para os códigos das aulas do Prime Experts realizado pela Prime Control.
