@@ -15,5 +15,5 @@ Dado que eu recebo o nome "${nome}" sobrenome "${sobrenome}" e a idade "${idade}
 Quando monto o meu email
     ${email}     Catenate  ${nome_email}  ${sobrenome_email}  ${idade_email}  ${prefixo_email}
     Set Test Variable  ${email_pronto}   ${email}
-Então imprimo o mu novo email
-    Log To Console  \n\n Bem vindo ao mundo Robot, este é seu novo email: ${email_pronto}
+Então imprimo o um novo email
+    Log To Console  \n\n Bemm vindo ao mundo Robot, este é seu novo email: ${email_pronto}
