@@ -16,4 +16,4 @@ Quando monto o meu email
     ${email}     Catenate  ${nome_email}  ${sobrenome_email}  ${idade_email}  ${prefixo_email}
     Set Test Variable  ${email_pronto}   ${email}
 Então imprimo o um novo email
-    Log To Console  \n\n Bemm vindo ao mundo Robot, este é seu novo email: ${email_pronto}
+    Log To Console  \n\n Bemm vindo ao mundo Robot, este é seu novo e-mail: ${email_pronto}
