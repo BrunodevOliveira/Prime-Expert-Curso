@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211029 17:59:00.518" rpa="false" schemaversion="2">
+<suite id="s1" name="For" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\for">
+<suite id="s1-s1" name="Test For" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\for\test_for.robot">
+<test id="s1-s1-t1" name="Cenario 1: Contando numeros em um determinado Range">
+<kw name="contando de &quot;0&quot; ate &quot;10&quot;" library="resource" sourcename="contando de &quot;${num_init}&quot; ate &quot;${num_final}&quot;">
+<msg timestamp="20211029 17:59:00.540" level="TRACE">Arguments: [ ${num_init}='0' | ${num_final}='10' ]</msg>
+<for flavor="IN">
+<var>${num}</var>
+<value>RANGE</value>
+<value>${num_init} ${num_final}</value>
+<iter>
+<var name="${num}">RANGE</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 17:59:00.540" level="TRACE">Arguments: [ '\n estou no numero: RANGE\n' ]</msg>
+<msg timestamp="20211029 17:59:00.540" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:59:00.540" endtime="20211029 17:59:00.540"/>
+</kw>
+<status status="PASS" starttime="20211029 17:59:00.540" endtime="20211029 17:59:00.540"/>
+</iter>
+<iter>
+<var name="${num}">0 10</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 17:59:00.541" level="TRACE">Arguments: [ '\n estou no numero: 0 10\n' ]</msg>
+<msg timestamp="20211029 17:59:00.541" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:59:00.540" endtime="20211029 17:59:00.541"/>
+</kw>
+<status status="PASS" starttime="20211029 17:59:00.540" endtime="20211029 17:59:00.541"/>
+</iter>
+<status status="PASS" starttime="20211029 17:59:00.540" endtime="20211029 17:59:00.541"/>
+</for>
+<msg timestamp="20211029 17:59:00.541" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:59:00.539" endtime="20211029 17:59:00.541"/>
+</kw>
+<status status="PASS" starttime="20211029 17:59:00.539" endtime="20211029 17:59:00.541"/>
+</test>
+<test id="s1-s1-t2" name="Cenario 2: falando os países no quais já vizitamos">
+<kw name="contando em que pais viajamos" library="resource">
+<msg timestamp="20211029 17:59:00.542" level="TRACE">Arguments: [  ]</msg>
+<kw name="FOR ${pais}">
+<arg>IN</arg>
+<arg>@{lista_pais}</arg>
+<msg timestamp="20211029 17:59:00.543" level="FAIL">No keyword with name 'FOR ${pais}' found.</msg>
+<status status="FAIL" starttime="20211029 17:59:00.543" endtime="20211029 17:59:00.543"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211029 17:59:00.544" endtime="20211029 17:59:00.544"/>
+</kw>
+<kw name="End" library="Reserved">
+<status status="NOT RUN" starttime="20211029 17:59:00.544" endtime="20211029 17:59:00.544"/>
+</kw>
+<status status="FAIL" starttime="20211029 17:59:00.542" endtime="20211029 17:59:00.544"/>
+</kw>
+<status status="FAIL" starttime="20211029 17:59:00.542" endtime="20211029 17:59:00.544">No keyword with name 'FOR ${pais}' found.</status>
+</test>
+<status status="FAIL" starttime="20211029 17:59:00.536" endtime="20211029 17:59:00.545"/>
+</suite>
+<status status="FAIL" starttime="20211029 17:59:00.519" endtime="20211029 17:59:00.546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="For">For</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="Test For">For.Test For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211027 00:13:25.707" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211029 17:57:54.723" rpa="false" schemaversion="2">
 <suite id="s1" name="Argumentos" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\argumentos">
 <suite id="s1-s1" name="Teste-Argumentos" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\argumentos\teste-argumentos.robot">
 <test id="s1-s1-t1" name="Cenario: criando email por argumentos">
-<kw name="Dado que eu recebo o nome &quot;augusto&quot; sobrenome &quot;vieira&quot; e a idade &quot;28&quot;" library="resource" sourcename="Dado que eu recebo o nome &quot;${nome}&quot; sobrenome &quot;${sobrenome}&quot; e a idade &quot;${idade}&quot;">
-<msg timestamp="20211027 00:13:25.728" level="TRACE">Arguments: [ ${nome}='augusto' | ${sobrenome}='vieira' | ${idade}='28' ]</msg>
+<kw name="Dado que eu recebo o nome &quot;bruno&quot; sobrenome &quot;oliveira&quot; e a idade &quot;28&quot;" library="resource" sourcename="Dado que eu recebo o nome &quot;${nome}&quot; sobrenome &quot;${sobrenome}&quot; e a idade &quot;${idade}&quot;">
+<msg timestamp="20211029 17:57:54.744" level="TRACE">Arguments: [ ${nome}='bruno' | ${sobrenome}='oliveira' | ${idade}='28' ]</msg>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${nome_email}</arg>
 <arg>${nome}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20211027 00:13:25.728" level="TRACE">Arguments: [ '${nome_email}' | '${nome}' ]</msg>
-<msg timestamp="20211027 00:13:25.729" level="INFO">${nome_email} = augusto</msg>
-<msg timestamp="20211027 00:13:25.729" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.728" endtime="20211027 00:13:25.729"/>
+<msg timestamp="20211029 17:57:54.745" level="TRACE">Arguments: [ '${nome_email}' | '${nome}' ]</msg>
+<msg timestamp="20211029 17:57:54.746" level="INFO">${nome_email} = bruno</msg>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.745" endtime="20211029 17:57:54.746"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${sobrenome_email}</arg>
 <arg>${sobrenome}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20211027 00:13:25.729" level="TRACE">Arguments: [ '${sobrenome_email}' | '${sobrenome}' ]</msg>
-<msg timestamp="20211027 00:13:25.730" level="INFO">${sobrenome_email} = vieira</msg>
-<msg timestamp="20211027 00:13:25.730" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.729" endtime="20211027 00:13:25.730"/>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Arguments: [ '${sobrenome_email}' | '${sobrenome}' ]</msg>
+<msg timestamp="20211029 17:57:54.746" level="INFO">${sobrenome_email} = oliveira</msg>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.746" endtime="20211029 17:57:54.746"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${idade_email}</arg>
 <arg>${idade}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20211027 00:13:25.730" level="TRACE">Arguments: [ '${idade_email}' | '${idade}' ]</msg>
-<msg timestamp="20211027 00:13:25.730" level="INFO">${idade_email} = 28</msg>
-<msg timestamp="20211027 00:13:25.730" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.730" endtime="20211027 00:13:25.730"/>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Arguments: [ '${idade_email}' | '${idade}' ]</msg>
+<msg timestamp="20211029 17:57:54.746" level="INFO">${idade_email} = 28</msg>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.746" endtime="20211029 17:57:54.746"/>
 </kw>
-<msg timestamp="20211027 00:13:25.730" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.728" endtime="20211027 00:13:25.730"/>
+<msg timestamp="20211029 17:57:54.746" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.744" endtime="20211029 17:57:54.746"/>
 </kw>
 <kw name="Quando monto o meu email" library="resource">
-<msg timestamp="20211027 00:13:25.731" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20211029 17:57:54.747" level="TRACE">Arguments: [  ]</msg>
 <kw name="Catenate" library="BuiltIn">
 <var>${email}</var>
 <arg>${nome_email}</arg>
@@ -44,50 +44,44 @@
 <arg>${idade_email}</arg>
 <arg>${prefixo_email}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20211027 00:13:25.731" level="TRACE">Arguments: [ 'augusto' | 'vieira' | '28' | '@robot.com' ]</msg>
-<msg timestamp="20211027 00:13:25.731" level="TRACE">Return: 'augusto vieira 28 @robot.com'</msg>
-<msg timestamp="20211027 00:13:25.731" level="INFO">${email} = augusto vieira 28 @robot.com</msg>
-<status status="PASS" starttime="20211027 00:13:25.731" endtime="20211027 00:13:25.731"/>
+<msg timestamp="20211029 17:57:54.747" level="TRACE">Arguments: [ 'bruno' | 'oliveira' | '28' | '@robot.com' ]</msg>
+<msg timestamp="20211029 17:57:54.747" level="TRACE">Return: 'bruno oliveira 28 @robot.com'</msg>
+<msg timestamp="20211029 17:57:54.747" level="INFO">${email} = bruno oliveira 28 @robot.com</msg>
+<status status="PASS" starttime="20211029 17:57:54.747" endtime="20211029 17:57:54.747"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${email_pronto}</arg>
 <arg>${email}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20211027 00:13:25.731" level="TRACE">Arguments: [ '${email_pronto}' | '${email}' ]</msg>
-<msg timestamp="20211027 00:13:25.731" level="INFO">${email_pronto} = augusto vieira 28 @robot.com</msg>
-<msg timestamp="20211027 00:13:25.731" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.731" endtime="20211027 00:13:25.731"/>
+<msg timestamp="20211029 17:57:54.748" level="TRACE">Arguments: [ '${email_pronto}' | '${email}' ]</msg>
+<msg timestamp="20211029 17:57:54.748" level="INFO">${email_pronto} = bruno oliveira 28 @robot.com</msg>
+<msg timestamp="20211029 17:57:54.748" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.747" endtime="20211029 17:57:54.748"/>
 </kw>
-<msg timestamp="20211027 00:13:25.732" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.730" endtime="20211027 00:13:25.732"/>
+<msg timestamp="20211029 17:57:54.748" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 17:57:54.747" endtime="20211029 17:57:54.748"/>
 </kw>
-<kw name="Então imprimo o mu novo email" library="resource">
-<msg timestamp="20211027 00:13:25.732" level="TRACE">Arguments: [  ]</msg>
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n Bem vindo ao mundo Robot, este é seu novo email: ${email_pronto}</arg>
-<doc>Logs the given message to the console.</doc>
-<msg timestamp="20211027 00:13:25.732" level="TRACE">Arguments: [ '\n\n Bem vindo ao mundo Robot, este é seu novo email: augusto vieira 28 @robot.com' ]</msg>
-<msg timestamp="20211027 00:13:25.733" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.732" endtime="20211027 00:13:25.733"/>
+<kw name="Então imprimo o mu novo email">
+<msg timestamp="20211029 17:57:54.749" level="FAIL">No keyword with name 'Então imprimo o mu novo email' found. Did you mean:
+    resource.Então Imprimo O Um Novo Email</msg>
+<status status="FAIL" starttime="20211029 17:57:54.749" endtime="20211029 17:57:54.749"/>
 </kw>
-<msg timestamp="20211027 00:13:25.733" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20211027 00:13:25.732" endtime="20211027 00:13:25.733"/>
-</kw>
-<status status="PASS" starttime="20211027 00:13:25.727" endtime="20211027 00:13:25.733"/>
+<status status="FAIL" starttime="20211029 17:57:54.744" endtime="20211029 17:57:54.750">No keyword with name 'Então imprimo o mu novo email' found. Did you mean:
+    resource.Então Imprimo O Um Novo Email</status>
 </test>
-<status status="PASS" starttime="20211027 00:13:25.724" endtime="20211027 00:13:25.734"/>
+<status status="FAIL" starttime="20211029 17:57:54.740" endtime="20211029 17:57:54.751"/>
 </suite>
-<status status="PASS" starttime="20211027 00:13:25.707" endtime="20211027 00:13:25.735"/>
+<status status="FAIL" starttime="20211029 17:57:54.724" endtime="20211029 17:57:54.752"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Argumentos">Argumentos</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Teste-Argumentos">Argumentos.Teste-Argumentos</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Argumentos">Argumentos</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Teste-Argumentos">Argumentos.Teste-Argumentos</stat>
 </suite>
 </statistics>
 <errors>
