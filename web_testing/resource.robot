@@ -50,4 +50,14 @@ Clicar em "Create an account"
 
 Preencher os dados obrigatórios
     Wait Until Element Is Visible   xpath=//*[@id="account-creation_form"]//h3[contains(text(),"Your personal information")]
-    Click Element       id="uniform-id_gender1"        
+    Click Element                   id="uniform-id_gender1"   
+    Input Text                      id="customer_firstname"
+    Input Text                      id="customer_lastname"
+    Input Text                      id="passwd"
+    Input Text                      id="company"
+    Input Text                      id=address1
+    Input Text                      id="city"
+    Set Focus To Element            id=id_state
+    Select From List By Index       id=id_state          
+    Input Text                      id=postcode
+    Input Text                      id=phone_mobile
