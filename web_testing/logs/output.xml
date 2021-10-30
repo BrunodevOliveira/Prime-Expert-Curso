@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211030 14:37:37.372" rpa="false" schemaversion="2">
+<suite id="s1" name="Web Testing" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\web_testing">
+<suite id="s1-s1" name="Test Web Testing" source="C:\Users\PICHAU\Documents\Programação\Prime-Robot\Prime-Expert-Curso\web_testing\test_web_testing.robot">
+<test id="s1-s1-t1" name="Caso de Teste 03: Lista de produtos">
+<kw name="Acessar a página home do site Automation Practice" library="resource">
+<msg timestamp="20211030 14:37:37.525" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211030 14:37:37.525" level="TRACE">Arguments: [ 'http://automationpractice.com/index.php' | 'chrome' ]</msg>
+<msg timestamp="20211030 14:37:37.525" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<msg timestamp="20211030 14:37:38.066" level="DEBUG">POST http://127.0.0.1:50397/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20211030 14:37:38.067" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:50397</msg>
+<msg timestamp="20211030 14:37:38.533" level="DEBUG">http://127.0.0.1:50397 "POST /session HTTP/1.1" 200 788</msg>
+<msg timestamp="20211030 14:37:38.533" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211030 14:37:38.533" level="DEBUG">POST http://127.0.0.1:50397/session/cc1ccc63bce1fe62a111e6ddd0830c60/timeouts {"script": 5000}</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">http://127.0.0.1:50397 "POST /session/cc1ccc63bce1fe62a111e6ddd0830c60/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">POST http://127.0.0.1:50397/session/cc1ccc63bce1fe62a111e6ddd0830c60/timeouts {"implicit": 0}</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">http://127.0.0.1:50397 "POST /session/cc1ccc63bce1fe62a111e6ddd0830c60/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211030 14:37:38.534" level="DEBUG">POST http://127.0.0.1:50397/session/cc1ccc63bce1fe62a111e6ddd0830c60/url {"url": "http://automationpractice.com/index.php"}</msg>
+<msg timestamp="20211030 14:37:42.221" level="DEBUG">http://127.0.0.1:50397 "POST /session/cc1ccc63bce1fe62a111e6ddd0830c60/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20211030 14:37:42.222" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211030 14:37:42.222" level="DEBUG">Opened browser with session id cc1ccc63bce1fe62a111e6ddd0830c60.</msg>
+<msg timestamp="20211030 14:37:42.222" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20211030 14:37:37.525" endtime="20211030 14:37:42.222"/>
+</kw>
+<msg timestamp="20211030 14:37:42.222" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 14:37:37.524" endtime="20211030 14:37:42.222"/>
+</kw>
+<status status="PASS" starttime="20211030 14:37:37.524" endtime="20211030 14:37:42.223"/>
+</test>
+<status status="PASS" starttime="20211030 14:37:37.391" endtime="20211030 14:37:42.224"/>
+</suite>
+<status status="PASS" starttime="20211030 14:37:37.373" endtime="20211030 14:37:42.225"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Web Testing">Web Testing</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Web Testing">Web Testing.Test Web Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
