@@ -37,13 +37,15 @@ Clicar na sub categoria "${Subcategoria}"
     Wait Until Element Is Visible   xpath=//div[@id="block_top_menu"]//a[@title="${Subcategoria}"]
     Click Element                   xpath=//div[@id="block_top_menu"]//a[@title="${Subcategoria}"]
 
-    # Conferir se os produtos da sub-categoria "${Subcategoria}" forma mostrados na página
-    #     Wait Until Element Is Visible     xpath=//div[contains(@class,'content_scene_cat_bg')]
-    # xpath=//div[@id='center_column']/ul[@class='product_list']
+Conferir se os produtos da sub-categoria "${Subcategoria}" forma mostrados na página
+    Page Should Contain Element     xpath=//span[@class='cat-name'][contains(., '${Subcategoria}')]
+    Page Should Contain Element     xpath=//div[@class='product-container']//h5//a[@title="Printed Summer Dress"]
+    Page Should Contain Element     xpath=//div[@class='product-container']//h5//a[@title='Printed Chiffon Dress']
+
 
 Clicar em "Sign in"
     Wait Until Element Is Visible    xpath=//*[@id="header"]//*[@class="login"][contains(text(),"Sign in")]
-    Click Element    xpath=//*[@id="header"]//*[@class="login"][contains(text(),"Sign in")]
+    Click Element                    xpath=//*[@id="header"]//*[@class="login"][contains(text(),"Sign in")]
 
 Informar um e-mail válido
     Wait Until Element Is Visible   id=email_create
