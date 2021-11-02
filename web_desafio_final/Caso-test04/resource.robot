@@ -51,3 +51,4 @@ Conferir se o cadastro foi efetuado com sucesso
     Wait Until Element Is Visible       //*[@id="header"]/div[2]/div/div/nav/div[1]/a
     Element Text Should Be              //*[@id="center_column"]/p
     ...    Welcome to your account. Here you can manage all of your personal information and orders.
+    Close Browser
